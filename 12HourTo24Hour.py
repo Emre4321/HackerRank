@@ -14,6 +14,7 @@ import sys
 #
 
 def timeConversion(s):
+    #Expected format is HH:MM:SS(AM/PM) (No spaces)
     AMorPM = s[-2:]
     hour = s[0] + s[1]
     minute = s[3] + s[4]
