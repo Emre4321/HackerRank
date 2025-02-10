@@ -13,12 +13,10 @@ import sys
 #
 
 def staircase(n):
-    hashtags = 1
     answer = []
-    for number in range(n):
+    for hashtags in range(1, n + 1):
         answer.append(" " * (n - hashtags) + "#" * hashtags)
         print(answer[hashtags - 1])
-        hashtags += 1
 
 if __name__ == '__main__':
     n = int(input().strip())
